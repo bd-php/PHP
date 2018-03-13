@@ -10,7 +10,7 @@ php > $result = ssh2_connect('localhost');
 php > var_dump($result);
 resource(2) of type (SSH2 Session)
 ```
-## ssh php code
+## File write code
 ```php
 <?php
 
