@@ -1,16 +1,6 @@
 ### PHP Build From Source
 ```sh
-sudo apt install apache2-dev \ 
-		 libxml2-dev \
-		 libcurl4-openssl-dev \
-		 libjpeg-dev \
-		 libpng16-dev \
-		 libxmp-dev \
-		 libmysqlclient-dev \
-		 libpq-dev \
-		 libicu-dev \
-		 libldap2-dev \
-		 libxslt1-dev
+sudo apt install apache2-dev libxml2-dev libcurl4-openssl-dev libjpeg-dev libpng16-dev libxmp-dev libmysqlclient-dev libpq-dev libicu-dev libldap2-dev libxslt1-dev
 		 
 
 ./configure \
