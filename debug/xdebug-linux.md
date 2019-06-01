@@ -1,14 +1,23 @@
 ## xdebug linux install
 ```sh
+sudo apt install php7.2-dev autoconf automake
+
 https://github.com/xdebug/xdebug
-sudo apt install php7.2-dev
-cd xdebug-master
+
+php -i > phpinfo.txt
+gedit phpinfo.txt
+https://xdebug.org/wizard.php
+
+tar -xvzf xdebug-2.7.2.tgz
+cd xdebug-2.7.2
 phpize
-./configure --enable-xdebug
-make clean
+
+./configure
 make
+
 locate mysql.so  [/usr/lib/php/20170718/pdo_mysql.so]
 sudo cp modules/xdebug.so /usr/lib/php/20170718/
+
 locate php.ini
 sudo gedit /etc/php/7.2/cli/php.ini
 ```
